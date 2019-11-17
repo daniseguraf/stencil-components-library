@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'ubd-button',
@@ -6,17 +6,14 @@ import { Component, h } from '@stencil/core';
   shadow: true
 })
 export class Button {
-  onclick() {
-    console.log('click');
-
-  }
+  @Prop() disabled: boolean = false;
+  @Prop() type: 'button' | 'reset' | 'submit' = 'button';
 
   render() {
     return (
-      <button onClick={this.onclick}>
+      <button type={this.type}  disabled={this.disabled}>
         <slot></slot>
       </button>
     );
   }
-
 }
