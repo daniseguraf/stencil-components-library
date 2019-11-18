@@ -1,0 +1,8 @@
+.dropdown {
+  width: 100%;
+}
+
+.dropdown-menu {
+  border: 1px solid purple;
+  padding: 1rem;
+}
