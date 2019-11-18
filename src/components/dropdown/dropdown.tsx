@@ -11,14 +11,11 @@ export class Dropdown {
     return (
       <div class="dropdown">
         <div class="dropdown-toggle">
-          <ubd-dropdown-header></ubd-dropdown-header>
+          <slot name="header"></slot>
         </div>
 
         <div class="dropdown-menu">
-          <ubd-dropdown-option></ubd-dropdown-option>
-          <ubd-dropdown-option>Option 1</ubd-dropdown-option>
-          <ubd-dropdown-option>Option 2</ubd-dropdown-option>
-          <ubd-dropdown-option>Option 3</ubd-dropdown-option>
+          <slot></slot>
         </div>
       </div>
     )

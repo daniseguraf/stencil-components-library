@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.dropdown-toggle {
+  border: 1px solid orangered;
+  padding: 1rem;
+}
+
 .dropdown-menu {
   border: 1px solid purple;
   padding: 1rem;
